@@ -1,0 +1,128 @@
+Day 2
+
+SQL - Structured Query Language
+
+Data => Information
+
+Database => Storage/collection of similar data
+	
+	with example
+
+DBMS => Database Mangement System
+	Storing data in the sys
+
+	Adv- 
+		Security
+		Multi user login
+		Backup
+
+RDBMS => Relational Database Mangement System
+
+	Tables and relationship bw them
+		- Data manipulation
+		
+Example
+Employee info
+
+ID	name	age	dept name
+004	hits	21	sd
+007	bond	40	weapons
+
+Normalisation rules
+1
+2
+3
+
+
+In RDBMS records are stored in the form of tables and table will have relationships
+
+RDBMS software examples
+-
+-
+-
+
+What is SQL => Query lang
+Access data from database
+
+
+MySQL vs SQL
+-DB software	-Query lang for data manipulation
+===================================
+SQL sub lang
+	-DDL
+		DR CAT
+		-using DDL we can create table structure/schema
+
+
+		drop- delete table and record
+		rename- table rename
+		create- create new table
+		alter- add,srop,modify,rename
+		truncate- all records deleted but structure remains
+--------------------------------
+	-DML
+		Data Manipulation Language
+		
+		insert, delete, update, lock, call
+---------------------------------
+
+	-DQL
+		Data Query LAng
+		
+		Select
+-----------------------------------
+	-TCL
+		Transaction Control Language
+		
+		commit and rollback
+-------------------------------
+	-DCL
+		Data Control Language
+
+		grant and revoke
+===================================
+
+
+MySQL Workbench
+
+
+====================================
+
+Operators
+
+	and or not in all 
+
+Regex
+ _ %
+
+Sql clauses:
+
+	1 Where 
+	2 Order by
+ 	3 Group by
+ 
+		Functions: aggregate and scalar
+			agg - multiple row ip single row op
+				sum min max
+			scalar - for each row it gives an op
+				numeric and char - upper lower length date etc
+	4 Having 
+
+
+Sub query
+	Syntax: 
+		outer ---> second execution
+		inner ---> first execution
+
+
+Types
+Single and multi row query
+
+IN 
+ANY 
+ALL
+
+Constraints
+
+
+	
