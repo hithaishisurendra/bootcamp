@@ -1,0 +1,162 @@
+TERMINAL OUTPUT
+
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git init
+Initialized empty Git repository in /Users/hithaishi/Desktop/bc day 1/.git/
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git config --global user.name "Hithaishi" 
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git config --global user.email "hithaishisurendra@gmail.com" 
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git add README.md
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git commit -m "first commit"
+[main (root-commit) 9c26594] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git branch -M main
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git remote add origin https://github.com/hithaishisurendra/bootcamp-day-1.git
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 214 bytes | 214.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/hithaishisurendra/bootcamp-day-1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git add f1.html f2.txt 
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git commit -m "second commit"                                                
+[main a060bbc] second commit
+ 2 files changed, 11 insertions(+)
+ create mode 100644 f1.html
+ create mode 100644 f2.txt
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git add f1.html f2.txt       
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git commit -m "second commit"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git push -u origin main      
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 413 bytes | 413.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/hithaishisurendra/bootcamp-day-1.git
+   9c26594..a060bbc  main -> main
+branch 'main' set up to track 'origin/main'.
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git pull -all
+error: did you mean `--all` (with two dashes)?
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git pull --all
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 662 bytes | 331.00 KiB/s, done.
+From https://github.com/hithaishisurendra/bootcamp-day-1
+   a060bbc..2b94df6  main       -> origin/main
+Updating a060bbc..2b94df6
+Fast-forward
+ f2.txt | 1 +
+ 1 file changed, 1 insertion(+)
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git remote -v
+origin  https://github.com/hithaishisurendra/bootcamp-day-1.git (fetch)
+origin  https://github.com/hithaishisurendra/bootcamp-day-1.git (push)
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git add .  
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git commit -m "second commit"
+[main 6676afd] second commit
+ 3 files changed, 1 insertion(+)
+ create mode 100644 .gitignore
+ create mode 100644 f3.txt
+ create mode 100644 f5.txt
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git push -u origin main      
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/hithaishisurendra/bootcamp-day-1.git
+   2b94df6..6676afd  main -> main
+branch 'main' set up to track 'origin/main'.
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git add .                    
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git add .gitignore           
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git commit -m "third commit" 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git push -u origin main      
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git branch test-branch-1     
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git branch test-branch-1 * master
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --recurse-submodules  recurse through submodules
+    --format <format>     format to use for the output
+
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git checkout test-branch-1     
+Switched to branch 'test-branch-1'
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git status
+On branch test-branch-1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   f2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git add --all
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git status   
+On branch test-branch-1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   f2.txt
+
+(base) hithaishi@Hithaishis-MacBook-Air bc day 1 % git commit -m "Branch change to f2.txt"   
+[test-branch-1 1054d07] Branch change to f2.txt
+ 1 file changed, 2 insertions(+)
