@@ -1,40 +1,36 @@
-package com.telstra.restdemo.controller;
+package com.telstra.restcrud.controller;
 
-import java.util.ArrayList;
+import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.telstra.restdemo.model.Employee1;
+import com.telstra.restcrud.model.Employee;
+import com.telstra.restcrud.repository.EmployeeRepository;
 
 @RestController
+@RequestMapping("api/v1")
 public class EmployeeController {
 	
-	ArrayList<Employee1> employee = new ArrayList<Employee1>();
+	@Autowired
+	EmployeeRepository employeeRepository;
 	
-	public EmployeeController()
-	{
-		employee.add(new Employee1(1,"hithu","tech",80000,25));
-		employee.add(new Employee1(2,"barbie","pink",90000,35));	
-		employee.add(new Employee1(3,"ken","blue",60000,15));
-	}
 	
 	@PostMapping("/employee")
-	
-	public String addEmployee(@RequestBody Employee1 employee1)
-		{
-			employee.add(employee1);
-			return "Employee added successfully";
-		}
-
-	
-	@PostMapping("/getemployee")
-		public ArrayList<Employee1> getAllEmployees()
-		{
-
-			return employee;
-		}
+	public String addEmployee(@RequestBody Employee employee)
+	{
+		employeeRepository.save(employee);
+		return "emp added";
+	}
 	
 	
+	@GetMapping("/employee")
+	public List<Employee> viewEmployee()
+	{
+		return employeeRepository.findAll();
+	}
 }
