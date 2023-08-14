@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="p1">this is p1</p>
+    <p id="p2">this is p2</p>
+
+    <button onclick=changeContent()>click to change content</button>
+    <button onclick=documentOutput()>doc op</button>
+    <button onclick=alertOutput()>win op</button>
+
+    <script>
+        function changeContent()
+        {
+            document.getElementById('p1').innerHTML="Hello hithu";
+        }
+        function documentOutput()
+        {
+            document.write("doc op");
+        }
+        function alertOutput()
+        {
+            window.alert("win op");
+        }
+    </script>
+
+</body>
+</html>

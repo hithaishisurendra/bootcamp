@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var hithu= {id:4, name:"mothew",salary:1000000}
+        //obj literal
+        console.log(hithu.id+" "+hithu.name+" "+hithu.salary);
+        console.log(hithu);
+
+        //obj by new keyword
+        var barbie=new Object();
+        barbie.id=1;
+        barbie.name="ken";
+        barbie.salary=2000000;
+
+        console.log(barbie.id+" "+barbie.name+" "+barbie.salary);
+        console.log(barbie);
+
+        //obj constructor
+        function hithu1(id,name,salary)
+        {
+            this.id=id;
+            this.name=name;
+            this.salary=salary;
+        }
+
+        var hit=new hithu1(5,"allen",5000000)
+        console.log(hit);
+    </script>
+    
+</body>
+</html>
