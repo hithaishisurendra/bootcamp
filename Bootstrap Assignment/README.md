@@ -1,1 +1,2 @@
-Personal profile website using HTML, CSS and Bootstrap 5
+Personal profile responsive website using HTML, CSS and Bootstrap 5
+
